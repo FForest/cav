@@ -1,19 +1,9 @@
 <article class="listing">
-  <a {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
-    <img src="{{venue.image}}" alt="">
-    <small>View Larger</small>
-  </a>
-  <h3>{{venue.title}}</h3>
-  <div class="detail owner">
-    <span>Owner:</span> {{venue.owner}}
-  </div>
-  <div class="detail type">
-    <span>Type:</span> {{venue.category}}
-  </div>
-  <div class="detail location">
-    <span>Location:</span> {{venue.city}}
-  </div>
-  <div class="detail bedrooms">
-    <span>Number of bedrooms:</span> {{venue.bedrooms}}
+  <img src="{{venue.image}}" alt="">
+  <a><h4>{{venue.title}}</h4></a>
+  <div>
+    <div>{{venue.address}}</div> 
+    <div>{{venue.email}}</div> 
+    <div>{{venue.phone}}</div> 
   </div>
 </article>
